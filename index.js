@@ -2,6 +2,10 @@ const superagent = require("superagent");
 require("dotenv").config();
 const log = require("./appLogger.js");
 
+async function sleep(ms) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function getBookings() {	
 	const targetUrl = `${process.env.owner_rez_base_url}/bookings/?since_utc=2023-01-01`;
 	const response = await superagent
@@ -12,6 +16,8 @@ async function getBookings() {
 };
 
 async function getTestQuote() {
+	log.current.debug(process.argv);
+	//await sleep(20000);
 	const targetUrl = `${process.env.owner_rez_legacy_url}/quotes`;
 	const externalId = "orp5b5fbb7x";
 	const quoteDetails = {		  
