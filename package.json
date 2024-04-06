@@ -12,7 +12,7 @@
     "@turf/turf": "^6.5.0",
     "airtable": "^0.12.2",
     "joi": "^17.12.3",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.7.0",
     "pino": "^8.19.0",
     "pino-pretty": "^11.0.0",
     "run-func": "^3.0.0",
