@@ -1,6 +1,5 @@
 const s3 = require("@aws-sdk/client-s3");
 const s3Link = require("@aws-sdk/s3-request-presigner");
-const crypto = require("crypto");
 
 const s3Client = new s3.S3Client({
   endpoint: process.env.spaces_endpoint,
@@ -20,7 +19,7 @@ function getUploadParameters(inputData) {
   const type = inputData.split(";")[0].split("/")[1];
   const params = {
     Bucket: process.env.spaces_bucket,
-    Key: `${crypto.randomUUID()}.${type}`,
+    Key: `${randomUUID()}.${type}`,
     Body: base64Data,
     ACL: "private",
     ContentEncoding: "base64",
