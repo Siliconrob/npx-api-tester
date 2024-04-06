@@ -11,6 +11,7 @@
     "@hapi/boom": "^10.0.1",
     "@turf/turf": "^6.5.0",
     "airtable": "^0.12.2",
+    "fast-xml-parser": "^4.3.6",
     "joi": "^17.12.3",
     "node-fetch": "^2.7.0",
     "pino": "^8.19.0",
