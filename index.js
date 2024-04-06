@@ -6,13 +6,16 @@ async function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+const defaultUserAgent = "api-user";
+
 async function getBookings() {	
 	const targetUrl = `${process.env.owner_rez_base_url}/bookings/?since_utc=2023-01-01`;
 	const response = await superagent
 		.get(targetUrl)
-		.set("User-Agent", process.env.owner_rez_user_agent)
+		.set("User-Agent", process.env.owner_rez_user_agent || defaultUserAgent)
 		.auth(`${process.env.owner_rez_username}`, `${process.env.owner_rez_token}`, { type: "auto", });	  
-	console.log(response.body);	  
+	//log.current.debug(response.body);
+	return response.body;
 };
 
 async function getTestQuote() {
@@ -34,11 +37,12 @@ async function getTestQuote() {
 		headers: new Headers({
 			"Content-Type": "application/json",
 			"Authorization": `Basic ${encoded}`,
-			"User-Agent": `${process.env.owner_rez_user_agent}`
+			"User-Agent": `${process.env.owner_rez_user_agent || defaultUserAgent}`
 		})			
     });
 	const result = await response.json();
-	log.current.debug(result);
+	//log.current.debug(result);
+	return result;
 };
 
 module.exports = {

@@ -1,5 +1,6 @@
 const Boom = require("@hapi/boom");
 const superagent = require("superagent");
+const fetch = require("node-fetch");
 
 function validateEnvVariable(envName) {
   if (!envName || !envName.length) {
@@ -48,6 +49,19 @@ module.exports = {
   GetNoAuth: async function (url) {
     return await superagent
       .get(url)
-      .set("User-Agent", process.env.no_auth_agent);
+      .set("User-Agent", process.env.no_auth_agent || "me me me");
   },
+  CustomVerb: async function (verb, url, data) {    
+    const authHeader = Buffer.from(`${process.env.owner_rez_username}:${process.env.owner_rez_token}`, 'utf8').toString('base64');    
+    const response = await fetch(url, {
+      method: verb,
+      body: JSON.stringify(data),
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${authHeader}`,
+        "User-Agent": process.env.owner_rez_user_agent
+      }
+    });    
+    return await response.json();
+  },  
 };
