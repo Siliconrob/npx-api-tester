@@ -29,6 +29,16 @@ async function getFieldDefinition(fieldDefinitionId) {
 	return response.body;
 };
 
+async function deleteInquiry(inquiryId) {	
+	const targetUrl = `${process.env.ngrok_base_url}/inquiries/${inquiryId}`;
+	const response = await superagent
+		.delete(targetUrl)
+		.set("User-Agent", process.env.owner_rez_user_agent || defaultUserAgent)
+		.auth(`${process.env.owner_rez_username}`, `${process.env.owner_rez_token}`, { type: "auto", });	  
+	//log.current.debug(response.body);
+	return response.body;
+};
+
 async function getField(fieldId) {	
 	const targetUrl = `${process.env.ngrok_base_url}/fields/${fieldId}`;
 	const response = await superagent
@@ -120,6 +130,7 @@ async function getTestQuote() {
 };
 
 module.exports = {
+	deleteInquiry,
 	getBookingFields,
 	getFieldDefinition,
 	getField,
