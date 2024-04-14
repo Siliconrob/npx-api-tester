@@ -42,7 +42,9 @@ module.exports = {
   },
   DefaultStartTime: new Date(2000, 1, 1),
   Get: async function (url) {
-    return await superagent.get(url).auth(process.env.airtable_key, {
+    return await superagent
+    .get(url)
+    .auth(process.env.airtable_key, {
       type: "bearer",
     });
   },
@@ -50,6 +52,17 @@ module.exports = {
     return await superagent
       .get(url)
       .set("User-Agent", process.env.no_auth_agent || "me me me");
+  },
+  InsecureGet: async function(url) {
+    const authHeader = Buffer.from(`${process.env.owner_rez_username}:${process.env.owner_rez_token}`, 'utf8').toString('base64');    
+    const response = await fetch(url, {
+      headers:{
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${authHeader}`,
+        "User-Agent": process.env.owner_rez_user_agent
+      }
+    });    
+    return await response.json();
   },
   CustomVerb: async function (verb, url, data) {    
     const authHeader = Buffer.from(`${process.env.owner_rez_username}:${process.env.owner_rez_token}`, 'utf8').toString('base64');    
