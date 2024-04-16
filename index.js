@@ -9,6 +9,62 @@ async function sleep(ms) {
 
 const defaultUserAgent = "api-user";
 
+async function createQuote(inquiryId, externalPropertyId) {
+
+	const targetUrl = `${process.env.owner_rez_legacy_url}/quotes?addCharges=false&skipRuleValidation=false`;
+	log.current.debug(targetUrl);
+	const internalPropertyId = Number(`0x${externalPropertyId.replace(/orp5b/gi, "").replace(/x/gi, "")}`);
+	const encoded = Buffer.from(`${process.env.owner_rez_username}:${process.env.owner_rez_token}`, 'utf8').toString('base64')
+	log.current.debug({ Encoded: encoded});	
+
+	const quoteDetails = {
+			"PropertyId": 393966,
+			"GuestId": 613023280,
+			"Arrival": "2024-04-18",
+			"Departure": "2024-04-19",
+			"Adults": 1,
+			"Children": 0,
+			"Infants": 0,
+			"Pets": 0,
+			"FirstPaymentRule": 0,
+			"SecondPaymentRule": false,
+			"SecurityDepositRule": 3,
+			"SecurityDepositType": 0,
+			"TravelInsuranceRule": 0,
+			"Status": 1,
+			"RequireConfirmationForOnlineBookings": true,
+			"PendingFor": 0,
+			"PendingAction": 0,
+			"SendPaymentReminder": false,
+			"SendSecurityDepositReminder": false,
+			"NoAgreement": false,
+			"InquiryId": inquiryId
+	};
+
+	// const quoteDetails = {
+	// 	"propertyId": internalPropertyId,
+	// 	"adults": 1,
+	// 	"arrival": "2024-04-21",
+	// 	"children": 0,
+	// 	"pets": 0,
+	// 	"departure": "2024-04-26",
+	// 	"inquiryId": inquiryId
+	// };
+
+	const response = await fetch(targetUrl, {
+		method: 'POST',
+		body: JSON.stringify(quoteDetails),
+		redirect: "follow",
+		headers: new Headers({
+			"Content-Type": "application/json",
+			"Authorization": `Basic ${encoded}`,
+			"User-Agent": `${process.env.owner_rez_user_agent || defaultUserAgent}`
+		})			
+    });
+	const result = await response.json();
+	return result;
+}
+
 async function getGuest(guestId) {	
 	const targetUrl = `${process.env.ngrok_base_url}/guests/${guestId}`;
 	const response = await superagent
@@ -130,6 +186,7 @@ async function getTestQuote() {
 };
 
 module.exports = {
+	createQuote,
 	deleteInquiry,
 	getBookingFields,
 	getFieldDefinition,
