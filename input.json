@@ -1,0 +1,204 @@
+{
+  "VCALENDAR": [
+    {
+      "NAME": "OwnerRez The Magical Mansion",
+      "PRODID": "-//github.com/rianjs/ical.net//NONSGML ical.net 4.0//EN",
+      "VERSION": "2.0",
+      "X-WR-CALNAME": "OwnerRez The Magical Mansion",
+      "VTIMEZONE": [
+        {
+          "TZID": "America/New_York",
+          "X-LIC-LOCATION": "America/New_York",
+          "STANDARD": [
+            {
+              "DTSTART": "20071104T020000",
+              "RRULE": "FREQ=YEARLY;BYDAY=1SU;BYMONTH=11",
+              "TZNAME": "EST",
+              "TZOFFSETFROM": "-0400",
+              "TZOFFSETTO": "-0500"
+            }
+          ],
+          "DAYLIGHT": [
+            {
+              "DTSTART": "20070311T020000",
+              "RRULE": "FREQ=YEARLY;BYDAY=2SU;BYMONTH=3",
+              "TZNAME": "EDT",
+              "TZOFFSETFROM": "-0500",
+              "TZOFFSETTO": "-0400"
+            }
+          ]
+        }
+      ],
+      "VEVENT": [
+        {
+          "CREATED": "20230405T194245Z",
+          "DESCRIPTION": "Booking: ORB7574834\\nArriving: Mar 22\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Apr 6\\, 2024 (Check-out at 10:00 AM)\\nName: Mike Lamb\\nEmail Address: mike.lamb@iluli.eu\\nPhone: 447711682972\\nParty: 2 adults and 2 children\\n",
+          "DTEND;TZID=America/New_York": "20240406T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240322T160000",
+          "LAST-MODIFIED": "20230405T194247Z",
+          "SEQUENCE": "7",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Mike Lamb mike.lamb@iluli.eu",
+          "UID": "e3564978578a4789b899407385b5a992"
+        },
+        {
+          "CREATED": "20240408T020408Z",
+          "DESCRIPTION": "Booking: ORB10422178\\nArriving: Apr 8\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Apr 13\\, 2024 (Check-out at 10:00 AM)\\nName: ORB10422178\\nParty: \\n\\n\\n--- NOTES ---\\nImported on 4/8/2024 02:23:39 EST from:\\nhttps://secure.ownerrez.com/feeds/ical/aea384c8c11847a7b254dc4025f61d5f\\n\\niCal Title:\\nBooked\\n",
+          "DTEND;TZID=America/New_York": "20240413T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240408T160000",
+          "LAST-MODIFIED": "20240408T022343Z",
+          "SEQUENCE": "3",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by ORB10422178",
+          "UID": "172a9585abf54507bb17e4ca6a3cbcb0"
+        },
+        {
+          "CREATED": "20240222T222848Z",
+          "DESCRIPTION": "Booking: ORB10040299\\nArriving: Apr 18\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Apr 21\\, 2024 (Check-out at 10:00 AM)\\nName: Nikki Owens\\nEmail Address: nowens0313@gmail.com\\nPhone: (336) 240-0900\\nParty: 6 adults and 6 children\\n",
+          "DTEND;TZID=America/New_York": "20240421T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240418T160000",
+          "LAST-MODIFIED": "20240223T140555Z",
+          "SEQUENCE": "8",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Nikki Owens nowens0313@gmail.com",
+          "UID": "648f803c1bf34418a3fed555b612d9ac"
+        },
+        {
+          "CREATED": "20240314T094207Z",
+          "DESCRIPTION": "Booking: ORB10222196\\nArriving: Apr 25\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Apr 30\\, 2024 (Check-out at 10:00 AM)\\nName: ORB10222196\\nParty: \\n\\n\\n--- NOTES ---\\nImported on 3/14/2024 10:28:47 EST from:\\nhttps://secure.ownerrez.com/feeds/ical/aea384c8c11847a7b254dc4025f61d5f\\n\\niCal Title:\\nBooked\\n",
+          "DTEND;TZID=America/New_York": "20240430T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240425T160000",
+          "LAST-MODIFIED": "20240314T102848Z",
+          "SEQUENCE": "3",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by ORB10222196",
+          "UID": "08fd68e2fde341559998ab271472be5d"
+        },
+        {
+          "CREATED": "20240407T160444Z",
+          "DESCRIPTION": "Booking: ORB10418075\\nArriving: May 2\\, 2024 (Check-in at 4:00 PM)\\nDeparting: May 5\\, 2024 (Check-out at 10:00 AM)\\nName: Janine Teran\\nEmail Address: janineteran@yahoo.com\\nPhone: (786) 843-1424\\nParty: 10 adults and 2 children\\n",
+          "DTEND;TZID=America/New_York": "20240505T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240502T160000",
+          "LAST-MODIFIED": "20240407T160532Z",
+          "SEQUENCE": "10",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Janine Teran janineteran@yahoo.com",
+          "UID": "cb9a7053a29846379966959a2587ddb0"
+        },
+        {
+          "CREATED": "20240405T215616Z",
+          "DESCRIPTION": "Booking: ORB10409148\\nArriving: May 29\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jun 2\\, 2024 (Check-out at 10:00 AM)\\nName: Kenneth Dunn\\nEmail Address: kjdpa@yahoo.com\\nPhone: (561) 307-8481\\nParty: 6 adults and 3 children\\n",
+          "DTEND;TZID=America/New_York": "20240602T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240529T160000",
+          "LAST-MODIFIED": "20240405T215727Z",
+          "SEQUENCE": "10",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Kenneth Dunn kjdpa@yahoo.com",
+          "UID": "71a2907fae2d4b5882ad4adef2a0fcfd"
+        },
+        {
+          "CREATED": "20240128T215135Z",
+          "DESCRIPTION": "Booking: ORB9797480\\nArriving: Jun 10\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jun 15\\, 2024 (Check-out at 10:00 AM)\\nName: MONIQUE CHACHERE\\nEmail Address: meauxc23@gmail.com\\nPhone: (832) 630-5160\\nParty: 8 adults and 6 children\\n",
+          "DTEND;TZID=America/New_York": "20240615T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240610T160000",
+          "LAST-MODIFIED": "20240128T215144Z",
+          "SEQUENCE": "8",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by MONIQUE CHACHERE meauxc23@gmail.com",
+          "UID": "d367fe06796b44269e577011254f2667"
+        },
+        {
+          "CREATED": "20231024T134348Z",
+          "DESCRIPTION": "Booking: ORB9124474\\nArriving: Jun 15\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jun 21\\, 2024 (Check-out at 10:00 AM)\\nName: nina bamvakais\\nEmail Address: nbamvakais@aol.com\\nPhone: (314) 496-5426\\nParty: 9 adults and 4 children\\n",
+          "DTEND;TZID=America/New_York": "20240621T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240615T160000",
+          "LAST-MODIFIED": "20240406T080958Z",
+          "SEQUENCE": "10",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by nina bamvakais nbamvakais@aol.com",
+          "UID": "ca755c72fbe84d7dafaed740a2024c94"
+        },
+        {
+          "CREATED": "20231109T135143Z",
+          "DESCRIPTION": "Booking: ORB9231119\\nArriving: Jun 22\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jun 29\\, 2024 (Check-out at 10:00 AM)\\nName: Philip Black\\nEmail Address: pblack0781@gmail.com\\nPhone: (207) 215-7860\\nPhone: (207) 582-2733 (Home)\\nParty: 8 adults\\n\\n\\n--- NOTES ---\\nAt the time of booking\\, the guest commented:\\n\\nThank you for sharing such a wonderful place. We look forward to our family trip.\\n",
+          "DTEND;TZID=America/New_York": "20240629T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240622T160000",
+          "LAST-MODIFIED": "20231109T135150Z",
+          "SEQUENCE": "7",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Philip Black pblack0781@gmail.com",
+          "UID": "bfae5073de5240de9c23384b075f2985"
+        },
+        {
+          "CREATED": "20240326T023154Z",
+          "DESCRIPTION": "Booking: ORB10325033\\nArriving: Jul 7\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jul 13\\, 2024 (Check-out at 10:00 AM)\\nName: Julia Maynard\\nEmail Address: julia_maynard0429@yahoo.com\\nEmail Address: losteeyore@gmail.com\\nPhone: (931) 254-3472\\nParty: 7 adults and 4 children\\n",
+          "DTEND;TZID=America/New_York": "20240713T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240707T160000",
+          "LAST-MODIFIED": "20240326T023238Z",
+          "SEQUENCE": "10",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Julia Maynard julia_maynard0429@yahoo.com",
+          "UID": "63e8816c341c4d6da18e215a3da07d13"
+        },
+        {
+          "CREATED": "20231125T003641Z",
+          "DESCRIPTION": "Booking: ORB9318394\\nArriving: Jul 20\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Jul 27\\, 2024 (Check-out at 10:00 AM)\\nName: Gary Miller\\nEmail Address: gary@peakrdsllc.com\\nPhone: (612) 709-6468\\nParty: 11 adults and 5 children\\n\\n\\n--- NOTES ---\\nAt the time of booking\\, the guest commented:\\n\\nWe are planning our annual extended family trip. There will be two family's with grandparents (total 16) and 3 vehicles. Your home looks awesome see you soon.\\n",
+          "DTEND;TZID=America/New_York": "20240727T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240720T160000",
+          "LAST-MODIFIED": "20231125T003745Z",
+          "SEQUENCE": "7",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Gary Miller gary@peakrdsllc.com",
+          "UID": "20e263b9aaac44ad8abfb0bfacda5e28"
+        },
+        {
+          "CREATED": "20240201T130909Z",
+          "DESCRIPTION": "Booking: ORB9833933\\nArriving: Aug 17\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Aug 24\\, 2024 (Check-out at 10:00 AM)\\nName: Brenda Starner\\nEmail Address: bkay966@aol.com\\nPhone: (717) 357-1364\\nPhone: (717) 357-1363\\nParty: 8 adults and 4 children\\n",
+          "DTEND;TZID=America/New_York": "20240824T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20240817T160000",
+          "LAST-MODIFIED": "20240201T130912Z",
+          "SEQUENCE": "7",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Brenda Starner bkay966@aol.com",
+          "UID": "9c77f27c51b94088bd71942f206db1c7"
+        },
+        {
+          "CREATED": "20231021T133953Z",
+          "DESCRIPTION": "Booking: ORB9104529\\nArriving: Oct 3\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Oct 13\\, 2024 (Check-out at 10:00 AM)\\nName: Annigna Angst\\nEmail Address: ninali@hotmail.com\\nPhone: 079 632 19 56\\nParty: 7 adults\\n",
+          "DTEND;TZID=America/New_York": "20241013T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20241003T160000",
+          "LAST-MODIFIED": "20231028T125823Z",
+          "SEQUENCE": "7",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by Annigna Angst ninali@hotmail.com",
+          "UID": "589b9f1843334068b807158dceaf56eb"
+        },
+        {
+          "CREATED": "20231229T175711Z",
+          "DESCRIPTION": "Booking: ORB9532066\\nArriving: Nov 27\\, 2024 (Check-in at 4:00 PM)\\nDeparting: Dec 3\\, 2024 (Check-out at 10:00 AM)\\nName: julie Spesaison\\nEmail Address: spesaison@verizon.net\\nPhone: (609) 707-1497\\nParty: 6 adults and 2 children\\n\\n\\n--- NOTES ---\\nAt the time of booking\\, the guest commented:\\n\\nWe are coming with our family...our daughter and her family\\, my son and his significant other...we may invite other family to join us.\\n",
+          "DTEND;TZID=America/New_York": "20241203T100000",
+          "DTSTAMP": "20240409T202908Z",
+          "DTSTART;TZID=America/New_York": "20241127T160000",
+          "LAST-MODIFIED": "20231229T201429Z",
+          "SEQUENCE": "9",
+          "STATUS": "CONFIRMED",
+          "SUMMARY": "Booked by julie Spesaison spesaison@verizon.net",
+          "UID": "d1b2e64bfd5640a897f4798c55764773"
+        }
+      ]
+    }
+  ]
+}

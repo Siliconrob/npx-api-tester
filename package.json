@@ -13,6 +13,7 @@
     "airtable": "^0.12.2",
     "dom-parser": "^1.1.5",
     "fast-xml-parser": "^4.3.6",
+    "ical2json": "^3.2.0",
     "joi": "^17.12.3",
     "node-fetch": "^2.7.0",
     "pino": "^8.19.0",
