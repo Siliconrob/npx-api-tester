@@ -9,17 +9,17 @@
     "@aws-sdk/client-s3": "^3.540.0",
     "@aws-sdk/s3-request-presigner": "^3.540.0",
     "@hapi/boom": "^10.0.1",
-    "@turf/turf": "^6.5.0",
+    "@turf/turf": "^7.1.0",
     "airtable": "^0.12.2",
     "dom-parser": "^1.1.5",
-    "fast-xml-parser": "^4.3.6",
-    "ical2json": "^3.2.0",
-    "joi": "^17.12.3",
+    "fast-xml-parser": "^4.5.0",
+    "ical2json": "^4.1.0",
+    "joi": "^17.13.3",
     "node-fetch": "^2.7.0",
-    "pino": "^8.19.0",
-    "pino-pretty": "^11.0.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
     "run-func": "^3.0.0",
-    "superagent": "^8.1.2"
+    "superagent": "^10.1.0"
   },
   "dependencies": {
     "dotenv": "^16.4.5"
