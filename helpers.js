@@ -1,6 +1,8 @@
 const Boom = require("@hapi/boom");
 const superagent = require("superagent");
 const fetch = require("node-fetch");
+const log = require("./appLogger.js");
+
 
 function validateEnvVariable(envName) {
   if (!envName || !envName.length) {
@@ -29,6 +31,13 @@ module.exports = {
   AirTableBaseUrl: "https://api.airtable.com/v0",
   GeocoderUrl: {
     HERE: "https://geocode.search.hereapi.com/v1/geocode",
+  },
+  TryCatchLog: async function(runFn) {
+    try {
+      await runFn()
+    } catch (exc) {
+      log.current.error(exc);
+    }
   },
   GeneralErrorHandlerFn: async function (runFn) {
     ["mapkey", "airtable_key"].forEach((z) => validateEnvVariable(z));
