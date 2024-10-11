@@ -32,12 +32,16 @@ module.exports = {
   GeocoderUrl: {
     HERE: "https://geocode.search.hereapi.com/v1/geocode",
   },
+  IsEmptyObject: function(toTest) {
+    return Object.keys(toTest ?? Object).length === 0 && (toTest ?? Object).constructor === Object;
+  },
   TryCatchLog: async function(runFn) {
     try {
-      await runFn()
+      return await runFn();
     } catch (exc) {
       log.current.error(exc);
     }
+    return {};
   },
   GeneralErrorHandlerFn: async function (runFn) {
     ["mapkey", "airtable_key"].forEach((z) => validateEnvVariable(z));
